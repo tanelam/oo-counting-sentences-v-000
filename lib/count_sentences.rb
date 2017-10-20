@@ -17,8 +17,8 @@ class String
   def count_sentences
     if sentence == " "
       return 0
-    else 
-      self.split(/[.?!]/).count 
+    else
+      self.split(/[.?!]/).count
     end 
 binding.pry
   end
