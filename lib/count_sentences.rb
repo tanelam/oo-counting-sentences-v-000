@@ -15,7 +15,11 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/).count 
+    if sentence == " "
+      return 0
+    else 
+      self.split(/[.?!]/).count 
+    end 
 binding.pry
   end
 end
