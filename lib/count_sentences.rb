@@ -1,4 +1,4 @@
-require 'pry'
+
 
 class String
 
@@ -15,11 +15,6 @@ class String
   end
 
   def count_sentences
-    if sentence == " "
-      return 0
-    else
-      self.split(/[.?!]/).count
-    end 
-binding.pry
-  end
+  self.split(/[.?!]/).delete_if { |x| x.size < 3 }.size 
+    end
 end
